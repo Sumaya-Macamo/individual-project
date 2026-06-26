@@ -1,0 +1,170 @@
+% !TeX spellcheck = en_GB
+% !TeX program = pdflatex
+%
+% Adapted from LuxSleek-CV 1.1 LaTeX template
+% Original author: Andreï V. Kostyrka, University of Luxembourg
+% Adapted for: Sumaya Macamo
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}        % To insert pictures
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{marvosym}        % Provides icons for the contact details
+
+\usepackage{enumitem}        % To redefine spacing in lists
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}        % Change this to use any font, but keep it simple
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---- Colour scheme: dusty/pastel pink instead of the original navy ----
+
+\definecolor{cvpink}{HTML}{C46A82}
+
+%%%%%%% USER COMMAND DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}}
+\newcommand{\is}{\par\vskip.5ex plus .4ex}
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvpink}#1}\par%
+     \vspace*{-2ex}{\color{cvpink}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth} %% Left column -- outer definition
+\colorbox{cvpink}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex}
+\colorbox{cvpink!90}{\color{white}  %% LEFT BOX
+\kern0.09\textwidth\relax
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large Sumaya \textbf{\textsc{Macamo}} \normalsize
+
+
+ \vspace*{0.5ex}
+ \null\hfill\includegraphics[width=0.65\textwidth]{headshot.jpeg}\hfill\null
+
+
+\headleft{Profile}
+Motivated \textbf{Computer Science} student at Gisma University of Applied Sciences with a strong interest in problem-solving and developing practical skills through academic and personal projects.  My strength lies in visuals and aesthetics, especially in creating clean, engaging designs and user-focused solutions. Curious, organized, and adaptable, I am always looking for opportunities to improve my skills and grow both technically and creatively.
+
+\headleft{Contact details}
+\small
+\MVAt\ {\small sumayamacamo@gmail.com} \\[0.4ex]
+\Mobilefone\ +49\,176\,73916385 \\[0.5ex]
+\Mundus\ \href{https://github.com/Sumaya-Macamo}{github.com/Sumaya-Macamo} \\[0.1ex]
+\Letter\ Rhinstra\ss{}e 79, 10315 Berlin, Germany
+\normalsize
+
+\headleft{Languages}
+\textbf{Portuguese}~(native) \\[0.5ex]
+\textbf{English}~(fluent) \\[0.5ex]
+\textbf{German}~(B1)
+
+\headleft{Technical Skills}
+\begin{itemize}
+\item Python (basic)
+\item HTML \& CSS (basic)
+\item Shell/command line (basic)
+\item Git \& GitHub (basic)
+\item \LaTeX
+\end{itemize}
+
+\headleft{Soft Skills}
+\begin{itemize}
+\item Teamwork \& collaboration; Adaptability \& willingness to learn; Attention to detail.
+
+\end{itemize}
+
+\end{minipage}%
+\kern0.09\textwidth\relax%
+}
+\end{minipage}% Right column
+\hskip2.5em
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}
+
+\vspace{2ex}
+
+\headright{Experience}
+
+\textsc{Sales Assistant} at \textit{Willow International School (Maputo, Mozambique).} \dates{2022.04--2022.06}
+\begin{itemize}
+\item Took orders and served customers during busy school events
+\item Assisted with food and beverage preparation
+\item Handled basic cash transactions
+\item Maintained cleanliness and organization of service and preparation areas
+\item Worked efficiently in a routine, fast-paced environment
+\end{itemize}
+
+\is
+\textsc{Community Service Volunteer} at \textit{RPENSAR (Maputo, Mozambique).} \\   
+\null\dates{2022.02--2022.06} \\[-\baselineskip]
+\begin{itemize}
+\item Worked as part of a team in community clean-up activities
+\item Followed instructions, safety guidelines, and schedules
+\item Supported physically active activities when required
+\end{itemize}
+
+\is
+\textsc{Event Support Volunteer} at \textit{Willow International School (Maputo, Mozambique).} \dates{2018.05--2018.06}
+\begin{itemize}
+\item Assisted in organizing a fundraising event
+\item Assisted with coordination and interaction with community members
+\end{itemize}
+
+\headright{Education}
+
+\textsc{Bachelor of Science in Computer Science.} \textit{Gisma University of Applied Sciences}, Berlin, Germany. \dates{2026.04--pres.}
+
+\is
+\textsc{High School Diploma.} \textit{Willow International School}, Maputo, Mozambique. \dates{2018.01--2022.12}
+
+\headright{Projects}
+
+\textsc{Personal Portfolio Website}
+\textit{GitHub Pages}
+\dates{2026} \\
+\smaller{Designed and developed a personal portfolio website using HTML and CSS.}
+\smaller{Created a GitHub repository to host projects and technical documentation.}
+\smaller{Integrated a LaTeX-created CV into the portfolio website.}
+\smaller{Applied version control practices using Git and GitHub.}
+
+\is
+\textsc{Colour Palette Generator}
+\textit{Python}
+\dates{2026} \\
+\smaller{Built a Python script that converts a hex colour code into RGB values.}
+\smaller{Generated a lighter colour variant using the same palette as my CV and website.}
+\smaller{Practiced functions, string slicing, and numeric conversion in Python.}
+
+\headright{Interests and Hobbies}
+
+\textit{Technology:} Software development, web development, and learning new programming concepts.
+
+\textit{Personal:} Architecture, fashion, and photography.
+
+\textit{Hobbies:} Reading, cooking \& baking, and creative arts.
+
+\end{minipage}
+
+\end{document}
