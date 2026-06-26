@@ -324,7 +324,7 @@ h1, h2, h3 { font-family: var(--font-display); margin: 0 0 .5em; font-weight: 60
   padding: 4px 10px;
   border-radius: var(--radius-sm);
 }
-.card-link { font-weight: 600; color: var(--rose-deep); }
+.card-link { font-weight: 600; color: var(--rose-deep); display: inline-block; margin-top: 12px; } 
 .card-link:hover { text-decoration: underline; }
 
 /* ---------- Timeline ---------- */
